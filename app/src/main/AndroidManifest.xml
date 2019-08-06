@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="moon.spec7">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="moon.spec7.AwardAdd" ></activity>
+        <activity android:name="moon.spec7.AwardList" ></activity>
+        <activity android:name="moon.spec7.AwardShow" ></activity>
+        <activity android:name="moon.spec7.AwardModify" ></activity>
+
+        <activity android:name="moon.spec7.CertificationAdd" ></activity>
+        <activity android:name="moon.spec7.CertificationList" ></activity>
+        <activity android:name="moon.spec7.CertificationShow" ></activity>
+        <activity android:name="moon.spec7.CertificationModify" ></activity>
+
+        <activity android:name="moon.spec7.ExpAdd" ></activity>
+        <activity android:name="moon.spec7.ExpList" ></activity>
+        <activity android:name="moon.spec7.ExpShow" ></activity>
+        <activity android:name="moon.spec7.ExpModify" ></activity>
+
+        <activity android:name="moon.spec7.LanguageAdd" ></activity>
+        <activity android:name="moon.spec7.LanguageList" ></activity>
+        <activity android:name="moon.spec7.LanguageShow" ></activity>
+        <activity android:name="moon.spec7.LanguageModify" ></activity>
+
+        <activity android:name="moon.spec7.EducationAdd" ></activity>
+        <activity android:name="moon.spec7.EducationList" ></activity>
+        <activity android:name="moon.spec7.EducationShow" ></activity>
+        <activity android:name="moon.spec7.EducationModify" ></activity>
+
+        <activity android:name="moon.spec7.CareerList" ></activity>
+        <activity android:name="moon.spec7.CareerAdd" ></activity>
+        <activity android:name="moon.spec7.CareerShow" ></activity>
+        <activity android:name="moon.spec7.CareerModify" ></activity>
+    </application>
+
+</manifest>

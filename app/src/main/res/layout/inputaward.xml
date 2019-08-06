@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical" android:padding="20dp" android:background="#368AFF">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:background="@drawable/layout_shape"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="#002266"
+                    android:layout_weight="7.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="대회명"/>
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/edittext_shape_attr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:text="수상날짜"
+                    android:layout_weight="7.5"
+                    android:textStyle="bold"
+                    android:textColor="#002266"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="2.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+                        <EditText
+                            android:id="@+id/year"
+                            android:layout_weight="2"
+                            android:maxLength="4"
+                            android:hint="YYYY"
+                            android:background="@drawable/edittext_shape_attr"
+                            android:layout_width="match_parent"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_weight="8"
+                            android:text="년"
+                            android:textColor="#878787"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+                        <EditText
+                            android:id="@+id/month"
+                            android:layout_weight="2"
+                            android:maxLength="2"
+                            android:hint="MM"
+                            android:background="@drawable/edittext_shape_attr"
+                            android:layout_width="match_parent"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="월"
+                            android:layout_weight="8"
+                            android:textColor="#878787"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+                        <EditText
+                            android:id="@+id/day"
+                            android:layout_weight="2"
+                            android:maxLength="2"
+                            android:hint="DD"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/edittext_shape_attr"
+                            android:inputType="number"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="일"
+                            android:layout_weight="8"
+                            android:textColor="#878787"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7.5"
+                    android:textColor="#002266"
+                    android:text="상장명"/>
+                <EditText
+                    android:id="@+id/awardname"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/edittext_shape_attr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_weight="7.5"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:textColor="#002266"
+                    android:layout_height="wrap_content"
+                    android:text="수상기관"/>
+                <EditText
+                    android:id="@+id/agency"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/edittext_shape_attr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TextView
+                android:textColor="#002266"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="수상내용"/>
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_marginTop="10dp"
+                android:scrollbars="vertical"
+                android:hint="수상내용을 입력해주세요."
+                android:textSize="15dp"
+                android:background="@drawable/dot_shape_attr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#353535"
+                android:inputType="textMultiLine"
+                android:minLines="10"
+                android:maxLines="15"
+                android:lines="15"
+                android:gravity="top|left"/>
+
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/save"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/button_shape"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:text="저장"/>
+                <Button
+                    android:id="@+id/cancel"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/button_shape"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:text="취소"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

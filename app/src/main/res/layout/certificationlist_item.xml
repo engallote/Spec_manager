@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical" android:background="@drawable/shape_cer">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name"
+            android:text="자격증명"
+            android:textStyle="bold"
+            android:textColor="#353535"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/date"
+            android:gravity="right"
+            android:textColor="#353535"
+            android:text="0000/00/00"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    <TextView
+        android:id="@+id/number"
+        android:text="자격번호"
+        android:textColor="#353535"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/agency"
+        android:text="발급기관"
+        android:textColor="#353535"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

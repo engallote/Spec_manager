@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+    <Spinner
+        android:background="@drawable/spinner_shape"
+        android:id="@+id/spinner_menu"
+        android:entries="@array/페이지"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9.1"/>
+    <LinearLayout
+        android:layout_weight="0.9"
+        android:orientation="vertical"
+        android:background="@drawable/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </LinearLayout>
+</LinearLayout>

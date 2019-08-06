@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/moveEdu"
+            android:title="학력관리" />
+        <item
+            android:id="@+id/moveWork"
+            android:title="경력관리" />
+        <item
+            android:id="@+id/moveCer"
+            android:title="자격증관리" />
+        <item
+            android:id="@+id/moveLan"
+            android:title="어학관리" />
+        <item
+            android:id="@+id/moveAward"
+            android:title="수상관리" />
+        <item
+            android:id="@+id/moveExp"
+            android:title="경험관리" />
+    </group>
+</menu>
